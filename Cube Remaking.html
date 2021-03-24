@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		/*html{
+			height: 
+		}*/
+		*{
+			box-sizing: border-box;
+		}
+		body{
+			background-image: linear-gradient(to right, pink, blue);
+
+		}
+		#div1{
+			margin: 200px;
+			perspective:500px;
+
+		}
+		#div2{
+			transform-style: preserve-3d;
+			width: 300px;
+			height: 300px;
+			margin: auto;
+			position: relative;
+			animation: anim 9s infinite linear;
+		}
+		@keyframes anim{
+			from{transform: rotateY(0deg) rotateX(0deg)}
+			to{transform:rotateY(360deg) rotateX(360deg)}
+
+		}
+		img{
+			position: absolute;
+			opacity: 0.9;
+			height: 300px;
+			width: 300px;
+			border: 3px solid aqua;
+		}
+		img:nth-child(1){
+	 	transform: rotateY(180deg) translateZ(150px);
+
+		}
+		img:nth-child(2){
+	 	transform: rotateY(0deg) translateZ(150px);
+
+		}
+		img:nth-child(3){
+	 	transform: rotateY(-90deg) translateZ(150px);
+
+		}
+		img:nth-child(4){
+	 	transform: rotateY(90deg) translateZ(150px);
+
+		}
+		img:nth-child(5){
+	 	transform: rotateX(-90deg) translateZ(150px);
+
+		}
+        img:nth-child(6){
+	 	transform: rotateX(90deg) translateZ(150px);
+
+		}
+
+	</style>
+</head>
+<body>
+	<div id="div1">
+		<div id="div2">
+		 <img src="https://i.pinimg.com/originals/52/c6/65/52c665df0515dd447eb92544374cf543.jpg">
+         <img src="https://c4.wallpaperflare.com/wallpaper/574/988/33/donald-duck-daisy-duck-mickey-mouse-goofy-and-pluto-cartoon-wallpaper-hd-2560%C3%971600-wallpaper-preview.jpg">
+        <img src="https://i.pinimg.com/originals/11/34/49/113449169b9e3e8321ac05eb826867c8.jpg">
+        <img src="https://wallpaperaccess.com/full/470186.jpg">
+        <img src="https://wallpapercave.com/wp/AhNQCal.jpg">
+        <img src="https://i.pinimg.com/originals/97/b6/95/97b69591d668d5559a8b04a5bde5a0cb.jpg">
+		</div>
+	</div>
+
+</body>
+</html>
